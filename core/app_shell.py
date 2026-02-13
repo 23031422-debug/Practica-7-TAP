@@ -46,11 +46,11 @@ class AppShell(QStackedWidget):
             self.setCurrentIndex(self.ADMIN)
         
         if role == "student":
-            self.admin_view.set_welcome(username)
+            self.student_view.set_welcome(username)
             self.setCurrentIndex(self.STUDENT)
         
         if role == "teacher":
-            self.admin_view.set_welcome(username)
+            self.teacher_view.set_welcome(username)
             self.setCurrentIndex(self.TEACHER)
         
         
